@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block jquery %}
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+{% endblock %}
+{% block content %}
+    {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+    
+    
+    <ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#home">Edit</a></li>
+  <li><a href="#jobs">Jobs</a></li>
+  <li><a href="#locations">Locations</a></li>
+</ul>
+
+
+
+<div class="tab-content">
+  <div class="tab-pane active" id="home">
+    <form method='POST' action='' enctype="multipart/form-data"> {% csrf_token %}
+
+    <div class='row'>
+        <div class='col-lg-12'>
+        {{ user_picture_form.as_p }}
+        </div>
+    </div>
+    <input class='btn btn-success' type='submit' value='Update' />
+    </form>
+  </div>
+  <div class="tab-pane" id="jobs">
+        <div class='row'>
+            <div class='col-lg-6'>
+                <ol>
+            {% for item in formset_j %}
+                {% if item.instance.position %}
+                <li>{{ item.instance.position }}, {{ item.instance.employer }}</li>
+                {% endif %}
+            {% endfor %}
+            </ol>
+            </div>
+            <div class='col-lg-6'>
+                <form method='POST' action='/edit/jobs'>{% csrf_token %}
+                {{ formset_j.management_form }}
+                {{ formset_j.as_p }}
+                 <input class='btn btn-success' type='submit' value='Update' />
+                </form>
+            </div>
+        </div>
+   </div>
+  <div class="tab-pane" id="locations">
+        <div class='row'>
+            <div class='col-lg-6'>
+                <ol>
+            {% for item in formset_a %}
+                {% if item.instance.street_address %}
+                <li>{{ item.instance.street_address }}, {{ item.instance.city }}</li>
+                {% endif %}
+            {% endfor %}
+            </ol>
+            </div>
+            <div class='col-lg-6'>
+                <form method='POST' action='/edit/locations'>{% csrf_token %}
+                {{ formset_a.management_form }}
+                {{ formset_a.as_p }}
+                 <input class='btn btn-success' type='submit' value='Update' />
+                </form>
+            </div>
+        </div>
+
+  </div>
+</div>
+
+    
+    
+
+{% endblock %}

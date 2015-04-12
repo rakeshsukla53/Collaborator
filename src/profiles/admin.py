@@ -19,5 +19,5 @@ admin.site.register(Job, JobAdmin)
 class UserPictureAdmin(admin.ModelAdmin):
     class Meta:
         model = UserPicture
-
+        
 admin.site.register(UserPicture, UserPictureAdmin)

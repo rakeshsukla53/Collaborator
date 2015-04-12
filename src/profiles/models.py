@@ -13,7 +13,6 @@ class Address(models.Model):
     timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
     
     active = models.BooleanField(default=True)
-
     def __unicode__(self, ):
         return self.city
     
@@ -33,19 +32,16 @@ class Job(models.Model):
     timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
     
     active = models.BooleanField(default=True)
-
     def __unicode__(self, ):
         return self.position
 
 
 class UserPicture(models.Model):
-
     user = models.ForeignKey(User)
     image = models.ImageField(upload_to='profiles/')
     timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
     active = models.BooleanField(default=True)
-
-
-    def __unicode__(self,):
+    
+    
+    def __unicode__(self, ):
         return str(self.image)
-
