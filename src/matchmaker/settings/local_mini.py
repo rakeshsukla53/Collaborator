@@ -2,10 +2,9 @@ import os
 
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'rakeshsukla53@gmail.com'
-EMAIL_HOST_PASSWORD = ''
-EMAIL_HOST_TLS = True
-
+EMAIL_HOST_USER = 'codingforentrepreneurs@gmail.com'
+EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_USE_TLS = True
 
 
 DEBUG = True
@@ -135,11 +134,9 @@ INSTALLED_APPS = (
     'registration',
     'south',
     'profiles',
+    'questions',
+    'matches',
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7
-
 LOGIN_REDIRECT_URL = '/'
-
-
-

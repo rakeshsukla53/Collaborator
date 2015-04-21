@@ -4,9 +4,41 @@
 
 {% block content %}
 
+<div class='col-lg-6 pull-left'>
+    <h1>Users</h1>    <!--the all.html file is coming from all function so we can pass the users-->
+    <!--Users is the model field in the view function -->
+    <div class='row'>
 {% for user in users %}
+    
+    {% if not request.user == user %}
 
-<li><a href='/members/{{ user.username}}'> {{ user }}</a>{% for item in user.address_set.all %} {% if forloop.first %} {{ item }} {% endif %} {% endfor %}</li>
-
+    <div class='col-lg-4'>
+    <a href='/members/{{ user.username}}'>
+        {% for pic in user.userpicture_set.all %}
+            {% if forloop.first %}
+                <img src='{{ MEDIA_URL }}{{ pic }}' class='img-responsive' />
+            {% endif %}
+        {% endfor %}
+            {% if not user.userpicture_set.all %}
+        <img src='{{ STATIC_URL }}img/default.jpg' class='img-responsive' />
+        {% endif %}
+        {{ user }}</a> <br/>
+    {% for item in user.address_set.all %} {% if forloop.first %} {{ item }} {% endif %} {% endfor %}
+    <br/><br/>
+    </div>
+ {% endif %}
+ {% cycle '' '' '' '</div><div class="row">' %}
 {% endfor %}
+</div>
+</div>
+
+<div class='col-lg-6 pull-right'>
+    <h1>Jobs Trending in Your Area</h1>
+    {% for abc in request.user.jobmatch_set.all %}
+        {% if abc.show %}
+        <li>{{ abc.job.position }} at {{ abc.job.employer }} in {{ abc.job.city }} </li>
+        {% endif %}
+    {% endfor %}
+</div>
 {% endblock %}
+

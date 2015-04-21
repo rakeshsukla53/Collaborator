@@ -14,6 +14,10 @@
     <!-- Custom styles for this template -->
     <link href="/static/css/jumbotron.css" rel="stylesheet">
     <link href="/static/css/custom.css" rel="stylesheet">
+      <style>
+        {% block styles %}
+        {% endblock %}
+      </style>
   </head>
 
   <body>
@@ -26,15 +30,31 @@
     {% block jumbotron %}{% endblock %}
     
       <div class="body-content">
+       
         <div class='row'>
+           {% if request.user.is_authenticated %}
         <div class='col-lg-2 col-12'>
           <ul class='nav nav-pills nav-stacked'>
             <li><a href='/'><span class='badge pull-right'>8</span>Home</a></li>
-            <li><a href='/'>Profile</a></li>
+            <li><a href='{% if request.user.is_authenticated %}{% url "profile" request.user.username %} {% endif %}'>Profile</a></li>
+            <li><a href='{% url "questions" %}'>Improve Matches</a></li>
             <li><a href='/'><span class='badge pull-right'>18</span>Messages</a></li>
           </ul>
         </div>
+        {% endif %}
         <div class='col-lg-10 col-12'>
+
+          {% if messages %}
+            <div class='row'>
+            
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+            </ul>
+            
+            </div>
+          {% endif %}
             {% block content %} {% endblock %}
           </div>
             
@@ -56,3 +76,4 @@
 </script>
   </body>
 </html>
+

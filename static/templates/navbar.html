@@ -20,16 +20,26 @@
             </form>
 
           {% if request.user.is_authenticated %}
+          <ul class='nav navbar-nav pull-right'>
+            <li><a href='/accounts/logout'>Logout</a></li>
+          </ul>
+          
           <p class="navbar-text pull-right">{{ request.user }}</p>
           {% else %}
+          <ul class='nav navbar-nav pull-right'>
+            <li><a href='/accounts/login'>Login</a></li>
+          </ul>
+          <!-- 
           <form class="navbar-form form-inline pull-right">
             <input type="text" placeholder="Email">
             <input type="password" placeholder="Password">
             <button type="submit" class="btn">Sign in</button>
-          </form>
+          </form> --->
           {% endif %}
         </div><!--/.nav-collapse -->
       </div>
       </div>
     </nav>
+
+
 

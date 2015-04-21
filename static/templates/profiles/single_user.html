@@ -1,23 +1,29 @@
 {% extends 'base.html' %}
 
 
-
 {% block content %}
     <div class='row'>
 
     <div class='col-lg-6'>
 <h1>{% if single_user.first_name %} {{ single_user.first_name }} {% else %} {{ single_user }} {% endif %}</h1>
 
-{% for item in single_user.userpicture_set.all %}
-<img src='{{ MEDIA_URL }}{{ item }}' class='img-responsive' />
 
-{% endfor %}
+
+        {% for pic in single_user.userpicture_set.all %}
+            {% if forloop.first %}
+                <img src='{{ MEDIA_URL }}{{ pic }}' class='img-responsive' />
+            {% endif %}
+        {% endfor %}
+            {% if not single_user.userpicture_set.all %}
+        <img src='{{ STATIC_URL }}img/default.jpg' class='img-responsive' />
+        {% endif %}
 </div>
-    
-    
-    
+
+
+
       <div class='col-lg-6'>
-        <h1>Info</h1>
+        {% if not request.user == single_user %}<h1>Match {{ match }}%</h1> {% endif %}
+        <h3>Info</h3>
         <div class='panel'>
     <div class='panel-heading'>Recent Jobs</div>
 {% for item in single_user.job_set.all %}
@@ -40,3 +46,4 @@
 
 </div>
 {% endblock %}
+

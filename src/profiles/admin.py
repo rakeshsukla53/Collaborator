@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Address, Job, UserPicture
+from .models import Address, Job, UserPicture, UserRole
 
 
 class AddressAdmin(admin.ModelAdmin):
@@ -21,3 +21,11 @@ class UserPictureAdmin(admin.ModelAdmin):
         model = UserPicture
         
 admin.site.register(UserPicture, UserPictureAdmin)
+
+
+
+class UserRoleAdmin(admin.ModelAdmin):
+    class Meta:
+        model = UserRole
+        
+admin.site.register(UserRole, UserRoleAdmin)

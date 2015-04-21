@@ -30,7 +30,6 @@ class Job(models.Model):
     end_date = models.DateField(auto_now=False, auto_now_add=False)
     updated = models.DateTimeField(auto_now=True, auto_now_add=False)
     timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
-    
     active = models.BooleanField(default=True)
     def __unicode__(self, ):
         return self.position
@@ -45,3 +44,26 @@ class UserPicture(models.Model):
     
     def __unicode__(self, ):
         return str(self.image)
+    
+CHOICES = (
+    ('Regular', 'Regular'),
+    ('Staff', 'Staff'),
+    ('Premium', 'Premium'),
+)
+
+class UserRole(models.Model):
+    user = models.OneToOneField(User)
+    role = models.CharField(max_length=120, default='Regular', choices=CHOICES)
+    
+    def __unicode__(self, ):
+        return self.role
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
