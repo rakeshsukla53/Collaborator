@@ -1,0 +1,207 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#image {
+    float: left;
+    width: 21.104888%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 2.673116%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#text9 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 385.234375px;
+    clear: left;
+    min-height: 0px;
+    min-width: 0px;
+    margin-right: 0px;
+    background-color: rgb(186, 228, 17);
+    color: rgb(255, 255, 255);
+    font-family: bubbler-one;
+}
+
+#text {
+    float: right;
+    font-size: 1.8em;
+    width: 23.319756%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 37px;
+    clear: none;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 2.669934%;
+}
+
+#text2 {
+    float: right;
+    font-size: 180%;
+    width: 23.319756%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 13.563325%;
+    clear: none;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 22.878507%;
+    background-color: rgba(0, 211, 211, 0.317647);
+    padding: 10px;
+}
+
+#text1 {
+    float: right;
+    font-size: 180%;
+    width: 23.319756%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 13.560976%;
+    clear: left;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 15.868445%;
+    background-color: rgba(0, 211, 211, 0.317647);
+    padding: 10px;
+}
+
+#text6 {
+    float: right;
+    font-size: 180%;
+    width: 23.319756%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 6.829268%;
+    clear: none;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 22.991981%;
+    background-color: rgba(0, 211, 211, 0.317647);
+    padding: 10px;
+}
+
+#text5 {
+    float: right;
+    font-size: 180%;
+    width: 23.319756%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 6.829268%;
+    clear: left;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 15.702966%;
+    background-color: rgba(0, 211, 211, 0.317647);
+    padding: 10px;
+}
+
+#text3 {
+    float: left;
+    font-size: 100%;
+    width: 23.319756%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 14.612211%;
+    margin-top: -0.046875px;
+    clear: right;
+    min-height: 0px;
+    font-family: bubbler-one;
+    color: rgb(0, 211, 211);
+    background-color: rgba(197, 238, 33, 0.509804);
+    padding: 10px;
+}
+
+#text4 {
+    float: left;
+    font-size: 100%;
+    width: 23.319756%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 22.878507%;
+    margin-top: -0.046875px;
+    clear: none;
+    min-height: 0px;
+    font-family: bubbler-one;
+    color: rgb(0, 211, 211);
+    padding: 10px;
+    background-color: rgba(197, 238, 33, 0.509804);
+    margin-right: 0%;
+}
+
+#text7 {
+    float: left;
+    font-size: 100%;
+    width: 23.319756%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 14.663951%;
+    margin-top: 0px;
+    clear: right;
+    min-height: 0px;
+    font-family: bubbler-one;
+    color: rgb(0, 211, 211);
+    padding: 10px;
+    margin-right: 0%;
+    background-color: rgba(197, 238, 33, 0.509804);
+}
+
+#text8 {
+    float: left;
+    font-size: 100%;
+    width: 23.319756%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 22.99039%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    font-family: bubbler-one;
+    color: rgb(0, 211, 211);
+    padding: 10px;
+    margin-right: 0%;
+    background-color: rgba(197, 238, 33, 0.509804);
+}
+

@@ -1,0 +1,180 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+    background-image:url("img/Central-Part-Light-Green-the-Four-Edges-Dark-Green-Green-Can-be-Protective-of-the-Eyes-HD-Abstract-Widescreen-Wallpaper%205.jpg");
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#image1 {
+    float: left;
+    width: 21.104452%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 2.673524%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#input {
+    float: left;
+    height: 2.48332%;
+    font-size: 2em;
+    margin-left: 56.714562%;
+    margin-top: 32px;
+    clear: none;
+    width: 14.934717%;
+    background-color: rgba(0, 211, 211, 0.580392);
+    font-family: bubbler-one;
+    color: rgb(255, 255, 255);
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    box-shadow: none;
+}
+
+#text1 {
+    float: left;
+    font-size: 1em;
+    width: 69.998573%;
+    height: auto;
+    text-align: justify;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 14.997146%;
+    margin-top: 38.703125px;
+    clear: both;
+    min-height: 0px;
+    min-width: 0px;
+    margin-right: 0px;
+    font-family: bubbler-one;
+    margin-bottom: 9.41%;
+    background-color: rgba(197, 238, 33, 0.509804);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+#text {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 20px;
+    clear: both;
+    min-height: 0px;
+    margin-right: 0px;
+    color: rgb(197, 238, 33);
+    font-family: bubbler-one;
+    min-width: 0px;
+}
+
+#text2 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    font-weight: 600;
+    line-height: 1em;
+    clear: both;
+    min-height: 0px;
+    min-width: 0px;
+    background-color: rgba(197, 238, 33, 0.509804);
+    color: rgb(255, 255, 255);
+    font-family: bubbler-one;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    position: fixed;
+    top: auto;
+    left: 0%;
+    bottom: 0%;
+}
+
+#image {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    visibility: hidden;
+    position: absolute;
+}
+
+#image2 {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 24px;
+    clear: both;
+    color: rgb(0, 0, 0);
+    min-width: 0px;
+}
+
+@media only screen and (max-width: 627px) {
+    #text {
+        margin-left: 0%;
+        margin-right: 0px;
+        float: left;
+        clear: none;
+        margin-top: 14px;
+        width: 100%;
+    }
+
+    #text1 {
+        margin-top: 15.96875px;
+        margin-left: 5%;
+        clear: both;
+        width: 90%;
+        margin-right: 0px;
+        float: left;
+    }
+
+    #text2 {
+        margin-top: 200px;
+        margin-left: 0%;
+        clear: none;
+        width: 100%;
+    }
+
+    #input {
+        margin-top: 22px;
+        margin-left: 38.10645%;
+        clear: none;
+        font-size: 1.5em;
+    }
+
+    #image1 {
+        width: 39.997146%;
+    }
+}
+

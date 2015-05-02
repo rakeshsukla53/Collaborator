@@ -23,6 +23,13 @@
 
       <div class='col-lg-6'>
         {% if not request.user == single_user %}<h1>Match {{ match }}%</h1> {% endif %}
+        {% if not request.user == single_user %}
+        {% if match > 70 %}
+          <form action="find/">
+          <input id="input" type="submit" value="FIND"></input>
+		  </form>
+        {% endif %}
+        {% endif %}
         <h3>Info</h3>
         <div class='panel'>
     <div class='panel-heading'>Recent Jobs</div>

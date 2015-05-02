@@ -14,13 +14,11 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     (r'^accounts/', include('registration.backends.default.urls')),
     url(r'^$', 'profiles.views.all', name='home'),
+    url(r'^members/(?P<username>\w+)/find', 'profiles.views.find', name='find'),
     url(r'^members/(?P<username>\w+)/$', 'profiles.views.single_user', name='profile'),
     url(r'^edit/$', 'profiles.views.edit_profile', name='edit_profile'),
     (r'^edit/jobs$', 'profiles.views.edit_jobs'),
     (r'^edit/locations$', 'profiles.views.edit_locations'),
     url(r'^questions/$', 'questions.views.all_questions', name='questions'),
 )
-
-
-
 

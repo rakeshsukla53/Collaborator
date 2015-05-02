@@ -1,0 +1,101 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#image {
+    float: left;
+    width: 21.103962%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 2.673524%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#text2 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 392.234375px;
+    clear: left;
+    min-height: 0px;
+    min-width: 0px;
+    margin-right: 0px;
+    background-color: rgb(186, 228, 17);
+    color: rgb(255, 255, 255);
+    font-family: bubbler-one;
+}
+
+#text {
+    float: right;
+    font-size: 1.8em;
+    width: 23.320057%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 37px;
+    clear: none;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 2.67%;
+}
+
+#text1 {
+    float: left;
+    font-size: 1em;
+    width: 85.333265%;
+    height: auto;
+    text-align: justify;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 7.332985%;
+    margin-top: 57px;
+    clear: right;
+    min-height: 0px;
+    font-family: bubbler-one;
+    margin-right: 0px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 211, 211, 0.580392);
+}
+
+body {
+    background-image:url("img/TechTantrik%20Wallpaper3.jpg");
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 627px) {
+    #text2 {
+        margin-top: 300px;
+        margin-left: 0%;
+        clear: left;
+        width: 100%;
+    }
+
+    #image {
+        width: 39.993937%;
+    }
+
+    #text {
+        height: auto;
+        width: 47.332451%;
+        text-align: center;
+    }
+}
+

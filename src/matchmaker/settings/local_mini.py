@@ -2,9 +2,9 @@ import os
 
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'codingforentrepreneurs@gmail.com'
-EMAIL_HOST_PASSWORD = 'yourpassword'
-EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'rakesh.sukla53@gmail.com'
+EMAIL_HOST_PASSWORD = ''
+
 
 
 DEBUG = True

@@ -38,7 +38,7 @@ def all(request):
         return render_to_response('profiles/all.html', locals(), context_instance=RequestContext(request))
     
     else:
-        return render_to_response('home.html', locals(), context_instance=RequestContext(request))
+        return render_to_response('front/index.html', locals(), context_instance=RequestContext(request))
     
 
 def single_user(request, username):
@@ -134,3 +134,10 @@ def edit_jobs(request):
     else:
         raise Http404
     
+
+def find(request, username):
+
+    print request
+    print "Rakesh"
+    return render_to_response('backend/page2.html', locals(), context_instance=RequestContext(request))
+

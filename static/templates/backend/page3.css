@@ -1,0 +1,124 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#image {
+    float: left;
+    width: 21.103962%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 2.673524%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#text2 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    font-weight: 700;
+    line-height: 1em;
+    clear: left;
+    min-height: 0px;
+    min-width: 0px;
+    background-color: rgba(197, 238, 33, 0.509804);
+    color: rgb(255, 255, 255);
+    font-family: bubbler-one;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    position: fixed;
+    top: auto;
+    left: 0%;
+    bottom: 0%;
+}
+
+#text {
+    float: right;
+    font-size: 1.8em;
+    width: 23.320057%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 37px;
+    clear: none;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 2.67%;
+    background-color: rgba(0, 211, 211, 0.580392);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#text1 {
+    float: left;
+    font-size: 1em;
+    width: 85.333265%;
+    height: auto;
+    text-align: justify;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 7.332985%;
+    margin-top: 57px;
+    clear: right;
+    min-height: 0px;
+    font-family: bubbler-one;
+    margin-right: 0px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(197, 238, 33, 0.509804);
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-bottom: 9.41%;
+}
+
+body {
+    background-image:url("img/Central-Part-Light-Green-the-Four-Edges-Dark-Green-Green-Can-be-Protective-of-the-Eyes-HD-Abstract-Widescreen-Wallpaper%201.jpg");
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 627px) {
+    #text2 {
+        margin-top: 300px;
+        margin-left: 0%;
+        clear: left;
+        width: 100%;
+    }
+
+    #image {
+        width: 39.993937%;
+    }
+
+    #text {
+        height: auto;
+        width: 47.332451%;
+        text-align: center;
+    }
+}
+

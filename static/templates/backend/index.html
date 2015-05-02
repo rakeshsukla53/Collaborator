@@ -1,7 +1,4 @@
-{% extends "base.html" %}
-{% load i18n %}
-
-{% block content %}
+<!DOCTYPE html>
 <html>
     <!-- This code is only meant for previewing your Reflow design. -->
     <head>
@@ -15,28 +12,10 @@
     <body>
 
     <div id="primaryContainer" class="primaryContainer clearfix">
+        <img id="image" src="{{ MEDIA_URL }}img/paperclips-chain-teamwork_1940x900_33941-002.jpg" class="image" />
         <img id="image1" src="{{ MEDIA_URL }}img/collaborator.png" class="image" />
         <img id="image2" src="{{ MEDIA_URL }}img/paperclips-chain-teamwork_1940x900_33941-003.jpg" class="image" />
     </div>
     </body>
-
-  <div class='row'>
-    <div class='col-lg-4 pull-right'>
-      <h1>Login here</h1>
-<form method="post" action=".">
-  {% csrf_token %} 
-  {{ form.as_p }}
-
-  <input class='btn' type="submit" value="{% trans 'Log in' %}" />
-  <input type="hidden" name="next" value="{{ next }}" />
-</form>
-
-<p>{% trans "Forgot password" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>!</p>
-<p>{% trans "Not member" %}? <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>!</p>
-
-</div>
-</div>
-    </html>
-{% endblock %}
-
+</html>
 

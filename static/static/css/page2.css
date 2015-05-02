@@ -1,0 +1,231 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+    background-image:url("{{ MEDIA_URL }}img/Central-Part-Light-Green-the-Four-Edges-Dark-Green-Green-Can-be-Protective-of-the-Eyes-HD-Abstract-Widescreen-Wallpaper%204.jpg");
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#image {
+    float: left;
+    width: 21.10548%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 2.673524%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#input1 {
+    float: left;
+    height: 5.04%;
+    font-size: 3em;
+    margin-left: 35.188313%;
+    margin-top: 34px;
+    clear: left;
+    width: 29.998749%;
+    background-color: rgba(0, 211, 211, 0.580392);
+    font-family: bubbler-one;
+    color: rgb(255, 255, 255);
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin-right: 0%;
+    box-shadow: none;
+}
+
+#text1 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    font-weight: 700;
+    line-height: 1em;
+    clear: left;
+    min-height: 0px;
+    min-width: 0px;
+    background-color: rgba(197, 238, 33, 0.509804);
+    color: rgb(255, 255, 255);
+    font-family: bubbler-one;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    position: fixed;
+    top: auto;
+    left: 0%;
+    bottom: 0%;
+}
+
+#input3 {
+    float: left;
+    height: 5.04%;
+    font-size: 3em;
+    margin-left: 35.15234%;
+    margin-top: 34px;
+    clear: left;
+    width: 29.998749%;
+    font-family: bubbler-one;
+    color: rgb(255, 255, 255);
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: rgba(0, 211, 211, 0.580392);
+    margin-right: 0%;
+    box-shadow: none;
+    margin-bottom: 9.41%;
+}
+
+#input2 {
+    float: left;
+    height: 5.04%;
+    font-size: 3em;
+    margin-left: 35.188313%;
+    margin-top: 34px;
+    clear: left;
+    width: 29.998749%;
+    font-family: bubbler-one;
+    color: rgb(255, 255, 255);
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin-right: 0%;
+    background-color: rgba(0, 211, 211, 0.580392);
+    box-shadow: none;
+}
+
+#input {
+    float: left;
+    height: 5.04%;
+    font-size: 3em;
+    margin-left: 35.188313%;
+    margin-top: 119px;
+    clear: both;
+    width: 29.998749%;
+    font-family: bubbler-one;
+    color: rgb(255, 255, 255);
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin-right: 0%;
+    background-color: rgba(0, 211, 211, 0.580392);
+    box-shadow: none;
+}
+
+#text {
+    float: right;
+    font-size: 1.8em;
+    width: 23.320195%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 37px;
+    clear: none;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 2.67%;
+    background-color: rgba(0, 211, 211, 0.580392);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 627px) {
+    #text1 {
+        margin-top: 300px;
+        margin-left: 0%;
+        clear: left;
+        width: 100%;
+    }
+
+    #input1 {
+        margin-top: 22px;
+        margin-left: 9.998659%;
+        clear: left;
+        font-size: 2em;
+        width: 79.998898%;
+        height: 3.454086%;
+        margin-right: 0px;
+        float: left;
+    }
+
+    #image {
+        width: 39.993937%;
+    }
+
+    #input3 {
+        margin-top: 23px;
+        margin-left: 9.997795%;
+        clear: left;
+        font-size: 2em;
+        width: 80%;
+        height: 3.36984%;
+        margin-right: 0px;
+        float: left;
+    }
+
+    #input2 {
+        margin-top: 22px;
+        margin-left: 9.998659%;
+        clear: left;
+        font-size: 2em;
+        width: 79.998898%;
+        height: 3.454086%;
+        margin-right: 0px;
+        float: left;
+    }
+
+    #input {
+        margin-top: 108px;
+        margin-left: 9.998659%;
+        clear: right;
+        font-size: 2em;
+        width: 79.998898%;
+        height: 3.454086%;
+        margin-right: 0px;
+        float: left;
+    }
+
+    #text {
+        height: auto;
+        width: 47.332451%;
+        text-align: center;
+    }
+}
+
