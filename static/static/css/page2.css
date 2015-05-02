@@ -5,7 +5,7 @@
     margin-right: auto;
     min-height: 100%;
     width: 100%;
-    background-image:url("{{ MEDIA_URL }}img/Central-Part-Light-Green-the-Four-Edges-Dark-Green-Green-Can-be-Protective-of-the-Eyes-HD-Abstract-Widescreen-Wallpaper%204.jpg");
+    background-image:url("../img/Central-Part-Light-Green-the-Four-Edges-Dark-Green-Green-Can-be-Protective-of-the-Eyes-HD-Abstract-Widescreen-Wallpaper%204.jpg");
     background-position: 0% 0%;
     background-repeat: repeat;
     background-attachment: scroll;

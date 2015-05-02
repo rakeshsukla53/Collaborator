@@ -137,7 +137,46 @@ def edit_jobs(request):
 
 def find(request, username):
 
-    print request
-    print "Rakesh"
+    #print request.user
+    #user = User.objects.get(username=username)
+    #job = Job.objects.filter(user=user)[1]  #it will return the object but you need specific element so this has
+    #has to be used
+    #print job.phone
+    #print job.phone  #you need specific element in the object
     return render_to_response('backend/page2.html', locals(), context_instance=RequestContext(request))
+
+def message(request, username):
+
+    from twilio.rest import TwilioRestClient
+
+    # put your own credentials here
+    ACCOUNT_SID = "AC976f8a49a80efa6b3080e7316a43376e"
+    AUTH_TOKEN = "e6104b2455da83f764bf4b48565374e6"
+
+    client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
+
+    client.messages.create(to="+13024385450",  #9292389138
+        from_="+13024070522", body="My profile perfectly matches with you. Let's connect")
+
+    return render_to_response('backend/page2.html', locals(), context_instance=RequestContext(request))
+
+def call(request, username):
+
+    from twilio.rest import TwilioRestClient
+
+    account = "AC976f8a49a80efa6b3080e7316a43376e"
+    token = "e6104b2455da83f764bf4b48565374e6"
+    client = TwilioRestClient(account, token)
+
+    call = client.calls.create(to="+13024385450",
+        from_="+13024070522", url="http://twimlets.com/holdmusic?Bucket=com.twilio.music.ambient")
+    print(call.sid)
+#http://twimlets.com/holdmusic?Bucket=com.twilio.music.ambient
+
+    return render_to_response('backend/page2.html', locals(), context_instance=RequestContext(request))
+
+def search(request, username):
+
+
+    return render_to_response('backend/page4.html', locals(), context_instance=RequestContext(request))
 
