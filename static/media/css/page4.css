@@ -1,0 +1,255 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+    background-image:url("../img/Central-Part-Light-Green-the-Four-Edges-Dark-Green-Green-Can-be-Protective-of-the-Eyes-HD-Abstract-Widescreen-Wallpaper.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    position: relative;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#image {
+    float: left;
+    width: 21.10374%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 2.673116%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#text9 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    font-weight: 700;
+    line-height: 1em;
+    clear: left;
+    min-height: 0px;
+    min-width: 0px;
+    background-color: rgba(197, 238, 33, 0.509804);
+    color: rgb(255, 255, 255);
+    font-family: bubbler-one;
+    padding: 3px;
+    position: fixed;
+    top: auto;
+    left: 0px;
+    bottom: 0%;
+}
+
+#text {
+    float: right;
+    font-size: 1.8em;
+    width: 23.317615%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 3.057851%;
+    clear: none;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 2.669934%;
+    background-color: rgba(0, 211, 211, 0.580392);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    padding: 10px;
+}
+
+#text2 {
+    float: right;
+    font-size: 180%;
+    width: 23.317615%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 1.088947%;
+    clear: none;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 22.729797%;
+    background-color: rgba(0, 211, 211, 0.317647);
+    padding: 10px;
+    border: 3px solid rgb(0, 211, 211);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+#text1 {
+    float: right;
+    font-size: 180%;
+    width: 23.317615%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 1.091949%;
+    clear: left;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 16.009246%;
+    background-color: rgba(0, 211, 211, 0.317647);
+    padding: 10px;
+    border: 3px solid rgb(0, 211, 211);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+#text6 {
+    float: right;
+    font-size: 180%;
+    width: 23.317615%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 7.097668%;
+    clear: none;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 22.987212%;
+    background-color: rgba(0, 211, 211, 0.317647);
+    padding: 10px;
+    border: 3px solid rgb(0, 211, 211);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+#text5 {
+    float: right;
+    font-size: 180%;
+    width: 23.317615%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 7.096289%;
+    clear: left;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 15.699442%;
+    background-color: rgba(0, 211, 211, 0.317647);
+    padding: 10px;
+    border: 3px solid rgb(0, 211, 211);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+#text3 {
+    float: left;
+    font-size: 100%;
+    width: 23.317615%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 14.60867%;
+    margin-top: -3px;
+    clear: right;
+    min-height: 0px;
+    font-family: bubbler-one;
+    color: rgb(0, 211, 211);
+    background-color: rgba(197, 238, 33, 0.509804);
+    padding: 10px;
+    border: 3px solid rgb(197, 238, 33);
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+#text4 {
+    float: left;
+    font-size: 100%;
+    width: 23.317615%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 22.779275%;
+    margin-top: -3px;
+    clear: none;
+    min-height: 0px;
+    font-family: bubbler-one;
+    color: rgb(0, 211, 211);
+    padding: 10px;
+    background-color: rgba(197, 238, 33, 0.509804);
+    margin-right: 0%;
+    border: 3px solid rgb(197, 238, 33);
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+#text7 {
+    float: left;
+    font-size: 100%;
+    width: 23.317615%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin: -2.96875px 0% 9.41% 14.658037%;
+    clear: right;
+    min-height: 0px;
+    font-family: bubbler-one;
+    color: rgb(0, 211, 211);
+    padding: 10px;
+    background-color: rgba(197, 238, 33, 0.509804);
+    border: 3px solid rgb(197, 238, 33);
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+#text8 {
+    float: left;
+    font-size: 100%;
+    width: 23.317615%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 22.988497%;
+    margin-top: -2.96875px;
+    clear: none;
+    min-height: 0px;
+    font-family: bubbler-one;
+    color: rgb(0, 211, 211);
+    padding: 10px;
+    margin-right: 0%;
+    background-color: rgba(197, 238, 33, 0.509804);
+    border: 3px solid rgb(197, 238, 33);
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+#image1 {
+    float: left;
+    width: 6.147935%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 46.790371%;
+    margin-top: 1.768587%;
+    clear: both;
+    color: rgb(0, 0, 0);
+    margin-right: 0px;
+}
+

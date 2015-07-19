@@ -6,7 +6,8 @@ from django.forms.models import modelformset_factory
 
 from questions.matching import points, match_percentage
 from matches.models import Match, JobMatch
-
+import urllib2
+import json
 from .models import Address, Job, UserPicture
 from .forms import AddressForm, JobForm, UserPictureForm
 
@@ -39,7 +40,6 @@ def all(request):
     
     else:
         return render_to_response('front/index.html', locals(), context_instance=RequestContext(request))
-    
 
 def single_user(request, username):
     #14 this function will show you whether you are matched to a particular guy and how well you are matched to him/her
@@ -109,7 +109,7 @@ def edit_locations(request):
     
     else:
         raise Http404
-    
+
     
 def edit_jobs(request):
     if request.method == 'POST':
@@ -151,7 +151,8 @@ def message(request, username):
 
     # put your own credentials here
     ACCOUNT_SID = "AC976f8a49a80efa6b3080e7316a43376e"
-    AUTH_TOKEN = "e6104b2455da83f764bf4b48565374e6"
+    AUTH_TOKEN = "130891e26dd1555afa339289188dbc1d"
+
 
     client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
 
@@ -165,7 +166,7 @@ def call(request, username):
     from twilio.rest import TwilioRestClient
 
     account = "AC976f8a49a80efa6b3080e7316a43376e"
-    token = "e6104b2455da83f764bf4b48565374e6"
+    token = "130891e26dd1555afa339289188dbc1d"
     client = TwilioRestClient(account, token)
 
     call = client.calls.create(to="+13024385450",
@@ -177,6 +178,137 @@ def call(request, username):
 
 def search(request, username):
 
+    obj = urllib2.urlopen("https://api.fullcontact.com/v2/person.json?email=rakesh.sukla53@gmail.com&apiKey=cee8985b6055428a")
+
+    data = json.load(obj)
+
+    fullName = data['contactInfo']['fullName']
+
+    for line in data['socialProfiles']:
+        try:
+            if line['typeId'] == 'facebook':
+                try:
+                    facebookUrl = line['url']
+                    facebookName = line['username']
+                except:
+                    pass
+        except:
+            pass
+        try:
+            if line['typeId'] == 'twitter':
+                try:
+                    twitterUrl = line['url']
+                    twitterName = line['username']
+                except:
+                    pass
+        except:
+            pass
+        try:
+
+            if line['typeId'] == 'linkedin':
+                try:
+                    linkedUrl = line['url']
+                    linkedId = line['id']
+                except:
+                    pass
+        except:
+            pass
+        try:
+            if line['typeId'] == 'pinterest':
+                try:
+                    pinterestUrl = line['url']
+                    pinterestName = line['username']
+                except:
+                    pass
+        except:
+            pass
+
 
     return render_to_response('backend/page4.html', locals(), context_instance=RequestContext(request))
+
+def job(request, username):
+
+    __author__ = 'rakesh'
+
+    #http://api.glassdoor.com/api/api.htm?t.p=34771&t.k=hY4Dey9RoIE&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-stats&returnStates=true&admLevelRequested=1
+
+    #for finding all the jobs related to that particular area
+
+    #http://api.glassdoor.com/api/api.htm?t.p=34771&t.k=hY4Dey9RoIE&userip=0.0.0.0&useragent=&format=json&v=1&action=employers&city=New%20York
+
+    #Especially related to JOB TITLE ..find all the jobs and theirs links
+
+    #http://api.glassdoor.com/api/api.htm?t.p=34771&t.k=hY4Dey9RoIE&userip=0.0.0.0&useragent=&format=json&v=1&action=employers&city=New%20York&jobTitle=Software
+    '''
+    HTTP REQUEST can be modified and changed accordingly
+    Also go through this http://www.glassdoor.com/api/jobsApiActions.htm
+    '''
+    import urllib2
+    import json
+
+    site = "http://api.glassdoor.com/api/api.htm?t.p=34771&t.k=hY4Dey9RoIE&userip=0.0.0.0&useragent=&format=json&v=1&action=employers&city=New%20York&jobTitle=Software"
+    hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
+           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+           'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
+           'Accept-Encoding': 'none',
+           'Accept-Language': 'en-US,en;q=0.8',
+           'Connection': 'keep-alive'}
+
+    req = urllib2.Request(site, headers=hdr)
+
+    page = urllib2.urlopen(req)
+
+    data = json.load(page)
+
+    employerInfo = data['response']['employers']
+
+    employerName = []
+
+    for line in employerInfo:
+        employerName.append(line['name'])
+        employerName.append(line['featuredReview']['location'])
+        employerName.append(line['website'])
+
+
+
+    return render_to_response('backend/job-search.html', locals(), context_instance=RequestContext(request))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

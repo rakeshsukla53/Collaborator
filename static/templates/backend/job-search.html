@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <!-- This code is only meant for previewing your Reflow design. -->
+    <head>
+	<link rel="stylesheet" href="/static/css/boilerplate1.css" />
+	<link rel="stylesheet" href="/media/css/job-search.css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<script>var __adobewebfontsappname__ = "reflow"</script>
+	<script src="http://use.edgefonts.net/bubbler-one:n4:all.js"></script>
+    </head>
+    <body>
+
+    <div id="primaryContainer" class="primaryContainer clearfix">
+        <div id="box" class="clearfix">
+            <img id="image" src="{{ MEDIA_URL }}img/collaborator.png" class="image" />
+            <p id="text">
+            Job Results
+            </p>
+        </div>
+        <p id="text1">Link</p>
+	<p id="text2">Location</p>
+	<p id="text3">Company</p>
+    {% for x in employerName  %}
+        <p id="text4">{{ x }}<br /></p>
+    {% endfor %}
+    </div>
+    </body>
+</html>
+
+

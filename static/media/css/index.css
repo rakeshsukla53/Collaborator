@@ -1,0 +1,156 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#image {
+    float: left;
+    width: 21.105528%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 2.673524%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#input {
+    float: left;
+    height: 2.887324%;
+    font-size: 2em;
+    margin-left: 56.714562%;
+    margin-top: 32px;
+    clear: none;
+    width: 14.935354%;
+    background-color: rgba(0, 211, 211, 0.580392);
+    font-family: bubbler-one;
+    color: rgb(255, 255, 255);
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+#image1 {
+    float: left;
+    width: 56.448911%;
+    max-width: 56.475164%;
+    height: auto;
+    margin-left: 21.773167%;
+    margin-top: 5.265625px;
+    clear: both;
+    color: rgb(0, 0, 0);
+    margin-right: 0px;
+}
+
+#text1 {
+    float: left;
+    font-size: 1em;
+    width: 69.999738%;
+    height: auto;
+    text-align: justify;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 14.998091%;
+    margin-top: 15.96875px;
+    clear: none;
+    min-height: 0px;
+    min-width: 0px;
+    margin-right: 0px;
+    font-family: bubbler-one;
+    margin-bottom: 20px;
+}
+
+#text {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 14px;
+    clear: both;
+    min-height: 0px;
+    margin-right: 0px;
+    color: rgb(197, 238, 33);
+    font-family: bubbler-one;
+    min-width: 0px;
+}
+
+#text2 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 100px;
+    clear: both;
+    min-height: 0px;
+    min-width: 0px;
+    margin-right: 0px;
+    background-color: rgb(186, 228, 17);
+    color: rgb(255, 255, 255);
+    font-family: bubbler-one;
+}
+
+@media only screen and (max-width: 627px) {
+    #text {
+        margin-left: 0%;
+        margin-right: 0px;
+        float: left;
+        clear: none;
+        margin-top: 14px;
+        width: 100%;
+    }
+
+    #image1 {
+        margin-top: 10px;
+        margin-left: 20%;
+        clear: both;
+        width: 60%;
+        max-width: none;
+        margin-right: 0px;
+        float: left;
+    }
+
+    #text1 {
+        margin-top: 15.96875px;
+        margin-left: 5%;
+        clear: both;
+        width: 90%;
+        margin-right: 0px;
+        float: left;
+    }
+
+    #text2 {
+        margin-top: 200px;
+        margin-left: 0%;
+        clear: none;
+        width: 100%;
+    }
+
+    #input {
+        margin-top: 22px;
+        margin-left: 38.10645%;
+        clear: none;
+        font-size: 1.5em;
+    }
+
+    #image {
+        width: 39.997146%;
+    }
+}
+

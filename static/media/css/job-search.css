@@ -1,0 +1,260 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#image {
+    float: left;
+    width: 21.102848%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 8px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin-right: 0%;
+}
+
+#text7 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    font-weight: 700;
+    line-height: 1em;
+    clear: left;
+    min-height: 0px;
+    min-width: 0px;
+    background-color: rgba(197, 238, 33, 0.509804);
+    color: rgb(255, 255, 255);
+    font-family: bubbler-one;
+    padding: 3px;
+    position: fixed;
+    top: auto;
+    left: 0%;
+    bottom: 0%;
+}
+
+#text {
+    float: right;
+    font-size: 1.8em;
+    width: 23.319232%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 49px;
+    clear: none;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 2.281205%;
+    background-color: rgba(0, 211, 211, 0.580392);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    padding: 10px;
+}
+
+#text4 {
+    float: left;
+    font-size: 1em;
+    width: 23.617378%;
+    height: auto;
+    text-align: justify;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 14px 0px 0% 6.469512%;
+    clear: right;
+    min-height: 0px;
+    font-family: bubbler-one;
+    color: rgb(255, 255, 255);
+    background-color: rgba(197, 238, 33, 0.509804);
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+body {
+    background-image:url("../img/Central-Part-Light-Green-the-Four-Edges-Dark-Green-Green-Can-be-Protective-of-the-Eyes-HD-Abstract-Widescreen-Wallpaper.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#box {
+    float: left;
+    height: 474px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    background-image:url("../img/search.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#text5 {
+    float: left;
+    font-size: 1em;
+    width: 23.617378%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 14px 0px 0% 6.469512%;
+    clear: none;
+    min-height: 0px;
+    font-family: bubbler-one;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: rgba(197, 238, 33, 0.509804);
+}
+
+#text6 {
+    float: left;
+    font-size: 1em;
+    width: 23.617378%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 14px 0px 0% 6.469512%;
+    clear: none;
+    min-height: 0px;
+    font-family: bubbler-one;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: rgba(197, 238, 33, 0.509804);
+}
+
+#text3 {
+    float: right;
+    font-size: 1.8em;
+    width: 23.62%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 63px;
+    clear: none;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 6.527439%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    padding: 10px;
+    background-color: rgba(0, 211, 211, 0.580392);
+}
+
+#text2 {
+    float: right;
+    font-size: 1.8em;
+    width: 23.62%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 63px;
+    clear: none;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 6.422256%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    padding: 10px;
+    background-color: rgba(0, 211, 211, 0.580392);
+}
+
+#text1 {
+    float: right;
+    font-size: 1.8em;
+    width: 23.62%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 63px;
+    clear: both;
+    min-height: 27px;
+    font-family: bubbler-one;
+    color: rgb(186, 228, 17);
+    margin-right: 9.74%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    padding: 10px;
+    background-color: rgba(0, 211, 211, 0.580392);
+}
+
+#text6:hover {
+    background-color: rgba(0, 211, 211, 0.580392);
+}
+
+@media only screen and (max-width: 627px) {
+    #text7 {
+        margin-top: 300px;
+        margin-left: 0%;
+        clear: left;
+        width: 100%;
+    }
+
+    #image {
+        width: 39.993937%;
+    }
+
+    #text {
+        height: auto;
+        width: 47.332451%;
+        text-align: center;
+    }
+
+    #text3 {
+        height: auto;
+        width: 47.332451%;
+        text-align: center;
+    }
+
+    #text2 {
+        height: auto;
+        width: 47.332451%;
+        text-align: center;
+    }
+
+    #text1 {
+        height: auto;
+        width: 47.332451%;
+        text-align: center;
+    }
+}
+
